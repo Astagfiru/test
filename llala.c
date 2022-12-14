@@ -175,12 +175,12 @@ void swap(list list, int a, int b){
     prev2->next = curr1;
     curr1->next = temp;
   } else{
-    // struct node *current = list.head, *temp = NULL, *index = NULL; 
-    // temp = list.head;   
-    // list.head = current;  
-    // list.head->next = temp->next;  
-    // index->next = temp;
-    // temp->next = NULL; 
+    struct node *current = list.head, *temp = NULL, *index = NULL; 
+    temp = list.head;   
+    list.head = current;  
+    list.head->next = temp->next;  
+    index->next = temp;
+    temp->next = NULL; 
   }
 
 }
